@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Red Carpet</title>
+    <link
+      rel="title"
+      type="image/x-icon"
+      href="https://www.redcarpetjourney.com/wp-content/uploads/2018/09/Jd3CQ-website-logo11.png"
+    />
+    <script defer src="index.js"></script>
+  </head>
+  <body>
+    <!-- ----------------------- LANDING PAGE ------------------------------------------------- -->
+    <div class="landing-page-container">
+      <!-- ---------------- NAVBAR -------------------------------------------------- -->
+      <div class="nav-container">
+        <div class="container">
+          <div class="nav-row">
+            <div class="logo nav-item">
+              <a href="./index.html">
+                <img
+                  src="https://www.redcarpetjourney.com/wp-content/uploads/2018/09/Jd3CQ-website-logo11.png"
+                  alt="logo"
+                />
+              </a>
+            </div>
+            <div class="nav-menu nav-item">
+              <div class="menu-item active"><a href="./index.html">Home</a></div>
+              <div class="menu-item">
+                <a>Trip
+                <img src="./media/down-arrow.png" alt=""/>
+                <div class="sub-menu-container">
+                <div class="sub-menu-item"><a href="#">Trekking & Hiking</a></div>
+                <div class="sub-menu-item"><a href="#">Classic</a></div>
+                <div class="sub-menu-item"><a href="#">Short</a></div>
+                <div class="sub-menu-item"><a href="#">Nature & Wildlife</a></div>
+                <div class="sub-menu-item"><a href="#">History & Culture</a></div>
+                <div class="sub-menu-item"><a href="#">Family</a></div>
+                <div class="sub-menu-item"><a href="#">Young Adult</a></div>
+                <div class="sub-menu-item"><a href="#">Cycling</a></div>
+                </div>
+              </a>
+
+              </div>
+              <div class="menu-item">
+                <a>Destination
+                <img src="./media/down-arrow.png" alt="" />
+                <div class="sub-menu-container">
+                  <div class="sub-menu-item"><a href="#">Nepal</a></div>
+                </div>
+              </a>
+              </div>
+              <div
+                class="menu-item"
+              >
+                <a>About
+                  <img src="./media/down-arrow.png" alt="" />
+                  <div class="sub-menu-container">
+                    <div class="sub-menu-item"><a href="./ourstory.html">Our Story</a></div>
+                    <div class="sub-menu-item"><a href="#">Our Services</a></div>
+                    <div class="sub-menu-item"><a href="#">Why Us ?</a></div>
+                    <div class="sub-menu-item"><a href="#">Booking Terms</a></div>
+                    <div class="sub-menu-item"><a href="#">Legal Documents</a></div>
+                  </div></a
+                >
+              </div>
+              <div class="menu-item">
+                <a href="./contactus.html">Contact Us</a>
+              </div>
+              <div class="menu-item"><a href="">Blog</a></div>
+            </div>
+            <div class="nav-callbtn-container nav-item">
+              <button class="nav-callbtn">
+                <img src="./media/phone-receiver-silhouette.png" alt="" />
+                Call Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- -------------------------- SLIDESHOW -------------------------------------- -->
+      <div class="slideshow-container">
+        <div class="slide-btn left" onclick="showSlides()">
+          <img src="./media/left-arrow.png" alt="" />
+        </div>
+        <div class="slide-btn right" onclick="showSlides()">
+          <img src="./media/right-arrow.png" alt="" />
+        </div>
+        <img
+          class="slide"
+          src="https://images.unsplash.com/photo-1506012787146-f92b2d7d6d96?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=2000&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ"
+          alt=""
+        />
+        <img
+          class="slide"
+          src="https://images.unsplash.com/photo-1513614835783-51537729c8ba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+          alt=""
+        />
+        <img
+          class="slide"
+          src="https://images.unsplash.com/photo-1571330422950-0de5787b593b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2729&q=80"
+          alt=""
+        />
+      </div>
+      <!-- ---------------------- SEARCH SECTION ------------------------------------- -->
+      <div class="search-container">
+        <div class="container">
+          <div class="search-box">
+            <form action="#" class="search-form">
+              <div class="input-container">
+                <img src="./media/map.png" alt="" />
+                <select name="destination" class="search-form-input">
+                  <option value="Ilam">Ilam</option>
+                  <option value="Rara">Rara</option>
+                  <option value="Gosaikunda">Gosaikunda</option>
+                </select>
+              </div>
+              <div class="input-container">
+                <img src="./media/hiking.png" alt="" />
+                <select name="activity" class="search-form-input">
+                  <option value="Hike">Hike</option>
+                  <option value="Trek">Trek</option>
+                </select>
+              </div>
+              <div class="input-container">
+                <img src="./media/calendar.png" alt="" />
+                <input type="date" name="date" class="search-form-input" />
+              </div>
+              <div class="input-container">
+                <img src="./media/wallet.png" alt="" />
+                <select name="budget" class="search-form-input">
+                  <img src="./media/down-arrow.png" alt="" />
+                  <option value="low">6,000 to 14,999</option>
+                  <option value="medium">15,000 to 49,999</option>
+                  <option value="high">50,000 to 99,999</option>
+                  <option value="unlimited">1,00,000 +</option>
+                </select>
+              </div>
+              <div class="">
+                <button
+                  type="submit"
+                  class="input-container search-form-submit"
+                  onmouseover="hover()"
+                  onmouseout="unhover()"
+                >
+                  <img
+                    class="search-icon"
+                    id="search-icon"
+                    src="./media/search-red.png"
+                    alt=""
+                  />
+                  Search
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- -------------------- OUR PACKAGES -------------------------------------- -->
+      <div class="package-container">
+        <div class="container">
+          <div class="heading">Our Packages</div>
+          <hr class="heading-underline" />
+          <div class="package-list-container">
+            <div class="package-item-container">
+              <div class="package-image-container">
+                <img
+                  src="https://images.unsplash.com/photo-1588893421526-8073c746c0f0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80"
+                  alt="#"
+                />
+              </div>
+              <div class="package-description-container">
+                <div class="package-title-container">
+                  <div class="package-title">Treking & Hiking</div>
+                  <div class="package-price">Rs. 13,999</div>
+                </div>
+                <div class="package-description">
+                  Bandipur for paragliding, mountain.
+                  <ul>
+                    <li>Trip Advisor</li>
+                    <li>Trip Advisor</li>
+                    <li>Trip Advisor</li>
+                  </ul>
+                  <hr class="package-hr" />
+                  <div class="package-footer">Tanahu - 8 Days 7 Nights</div>
+                </div>
+              </div>
+            </div>
+            <div class="package-item-container">
+              <div class="package-image-container">
+                <img
+                  src="https://images.unsplash.com/photo-1588893421526-8073c746c0f0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80"
+                  alt="#"
+                />
+              </div>
+              <div class="package-description-container">
+                <div class="package-title-container">
+                  <div class="package-title">Treking & Hiking</div>
+                  <div class="package-price">Rs. 13,999</div>
+                </div>
+                <div class="package-description">
+                  Bandipur for paragliding, mountain.
+                  <ul>
+                    <li>Trip Advisor</li>
+                    <li>Trip Advisor</li>
+                    <li>Trip Advisor</li>
+                  </ul>
+                  <hr class="package-hr" />
+                  <div class="package-footer">Tanahu - 8 Days 7 Nights</div>
+                </div>
+              </div>
+            </div>
+            <div class="package-item-container">
+              <div class="package-image-container">
+                <img
+                  src="https://images.unsplash.com/photo-1588893421526-8073c746c0f0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80"
+                  alt="#"
+                />
+              </div>
+              <div class="package-description-container">
+                <div class="package-title-container">
+                  <div class="package-title">Treking & Hiking</div>
+                  <div class="package-price">Rs. 13,999</div>
+                </div>
+                <div class="package-description">
+                  Bandipur for paragliding, mountain.
+                  <ul>
+                    <li>Trip Advisor</li>
+                    <li>Trip Advisor</li>
+                    <li>Trip Advisor</li>
+                  </ul>
+                  <hr class="package-hr" />
+                  <div class="package-footer">Tanahu - 8 Days 7 Nights</div>
+                </div>
+              </div>
+            </div>
+            <div class="package-item-container">
+              <div class="package-image-container">
+                <img
+                  src="https://images.unsplash.com/photo-1588893421526-8073c746c0f0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80"
+                  alt="#"
+                />
+              </div>
+              <div class="package-description-container">
+                <div class="package-title-container">
+                  <div class="package-title">Treking & Hiking</div>
+                  <div class="package-price">Rs. 13,999</div>
+                </div>
+                <div class="package-description">
+                  Bandipur for paragliding, mountain.
+                  <ul>
+                    <li>Trip Advisor</li>
+                    <li>Trip Advisor</li>
+                    <li>Trip Advisor</li>
+                  </ul>
+                  <hr class="package-hr" />
+                  <div class="package-footer">Tanahu - 8 Days 7 Nights</div>
+                </div>
+              </div>
+            </div>
+            <div class="package-item-container">
+              <div class="package-image-container">
+                <img
+                  src="https://images.unsplash.com/photo-1588893421526-8073c746c0f0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80"
+                  alt="#"
+                />
+              </div>
+              <div class="package-description-container">
+                <div class="package-title-container">
+                  <div class="package-title">Treking & Hiking</div>
+                  <div class="package-price">Rs. 13,999</div>
+                </div>
+                <div class="package-description">
+                  Bandipur for paragliding, mountain.
+                  <ul>
+                    <li>Trip Advisor</li>
+                    <li>Trip Advisor</li>
+                    <li>Trip Advisor</li>
+                  </ul>
+                  <hr class="package-hr" />
+                  <div class="package-footer">Tanahu - 8 Days 7 Nights</div>
+                </div>
+              </div>
+            </div>
+            <div class="package-item-container">
+              <div class="package-image-container">
+                <img
+                  src="https://images.unsplash.com/photo-1588893421526-8073c746c0f0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80"
+                  alt="#"
+                />
+              </div>
+              <div class="package-description-container">
+                <div class="package-title-container">
+                  <div class="package-title">Treking & Hiking</div>
+                  <div class="package-price">Rs. 13,999</div>
+                </div>
+                <div class="package-description">
+                  Bandipur for paragliding, mountain.
+                  <ul>
+                    <li>Trip Advisor</li>
+                    <li>Trip Advisor</li>
+                    <li>Trip Advisor</li>
+                  </ul>
+                  <hr class="package-hr" />
+                  <div class="package-footer">Tanahu - 8 Days 7 Nights</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- --------------------------------- ACTIVITY ------------------------------------------------- -->
+      <div class="activity-container">
+        <div class="container">
+          <div class="heading">Our Activites</div>
+          <hr class="heading-underline" />
+          <div class="activity-list-container">
+            <div class="activity-item-container">
+              <img
+                src="https://images.unsplash.com/photo-1522850067562-a4c60453058d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2865&q=80"
+                alt=""
+              />
+              <span class="activity-title">HIKING</span>
+            </div>
+            <div class="activity-item-container">
+              <img
+                src="https://images.unsplash.com/photo-1522850067562-a4c60453058d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2865&q=80"
+                alt=""
+              />
+              <span class="activity-title">HIKING</span>
+            </div>
+            <div class="activity-item-container">
+              <img
+                src="https://images.unsplash.com/photo-1522850067562-a4c60453058d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2865&q=80"
+                alt=""
+              />
+              <span class="activity-title">HIKING</span>
+            </div>
+            <div class="activity-item-container">
+              <img
+                src="https://images.unsplash.com/photo-1522850067562-a4c60453058d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2865&q=80"
+                alt=""
+              />
+              <span class="activity-title">HIKING</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ---------------------------------- CONTACT US ---------------------------------------------------- -->
+      <div class="contact-container">
+        <img
+          src="https://images.unsplash.com/photo-1528846328457-87c98b48ef37?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80"
+          alt=""
+        />
+        <div class="contact-box-container">
+          <div class="heading">Contact Us</div>
+          <hr class="heading-underline" />
+          <form action="#" class="contactus-form-box">
+            <input
+              type="text"
+              name="name"
+              class="input input-full"
+              placeholder="Your Name*"
+            />
+            <div class="input-stretch">
+              <input type="email" name="email" placeholder="Your Email*" />
+              <input type="number" name="phone" placeholder="Phone No*" />
+            </div>
+            <textarea
+              rows="5"
+              name="message"
+              placeholder="Write Your Message(Optional)"
+            ></textarea>
+            <input type="submit" value="Send Message" />
+          </form>
+        </div>
+      </div>
+      <!-- -------------------------------- FEATURES ------------------------------------------------------ -->
+      <div class="feature-container">
+        <div class="container">
+          <div class="feature-list-container">
+            <div class="feature-item">
+              <img src="./media/home.png" alt="" />
+              <span class="feature-title">Feeling Of Home</span>
+            </div>
+            <div class="feature-item">
+              <img src="./media/trust.png" alt="" />
+              <span class="feature-title">100% Trust</span>
+            </div>
+            <div class="feature-item">
+              <img src="./media/security.png" alt="" />
+              <span class="feature-title">100% Safety</span>
+            </div>
+            <div class="feature-item">
+              <img src="./media/personal-security.png" alt="" />
+              <span class="feature-title">Personal Safety</span>
+            </div>
+            <div class="feature-item">
+              <img src="./media/locker.png" alt="" />
+              <span class="feature-title">Locker</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ---------------------------- VIDEO --------------------------------------------------- -->
+      <div class="video-container">
+        <div class="container">
+          <video class="video" src="./media/nepal.mp4" controls autoplay muted></video>
+        </div>
+      </div>
+      <!-- ------------------------ TESTIMONIALS ------------------------------------------------------ -->
+      <div class="testimonial-container">
+        <div class="container">
+          <div class="heading">Testimonials</div>
+          <hr class="heading-underline" />
+
+          <div class="testimonial-list-container">
+            <div class="btn-container">
+              <button class="prev-btn">PREV</button>
+            </div>
+            <div class="testimonial-item-box">
+              <div class="testimonial-identity-container">
+                <img
+                  src="https://media.istockphoto.com/id/1270067126/photo/smiling-indian-man-looking-at-camera.jpg?s=612x612&w=0&k=20&c=ovIQ5GPurLd3mOUj82jB9v-bjGZ8updgy1ACaHMeEC0="
+                  alt=""
+                />
+                <span class="testimonial-name">Barry Lord</span>
+              </div>
+              <div class="testimonial-message">
+                <i
+                  >“What ever happened to my life no matter how hard my life is
+                  going to be, I’d never give up being adventurous. After I
+                  choose Redcarpet to travel my dream, it was all feeling about
+                  all of my fantasies' came true. I want to give special thanks
+                  for this beautiful trip”.</i
+                >
+              </div>
+            </div>
+            <div class="btn-container">
+              <button class="next-btn">NEXT</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- --------------------------------- OUR BLOGS ----------------------------------------------- -->
+      <div class="blog-container">
+        <div class="container">
+          <div class="heading">Our Blogs</div>
+          <hr class="heading-underline" />
+          <div class="blog-list-container">
+            <div class="blog-item-container">
+              <div class="blog-image-container">
+                <img
+                  src="https://images.unsplash.com/photo-1588893421526-8073c746c0f0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80"
+                  alt="#"
+                />
+              </div>
+              <div class="blog-description-container">
+                <div class="blog-info-container">
+                  <div class="blog-date">Aug 9, 2022</div>
+                  <div class="blog-comment">3 Comments</div>
+                </div>
+                <hr class="blog-hr" />
+                <div class="blog-description">
+                  <div class="blog-heading">Fewa Lake become popular</div>
+                  <div class="blog-paragraph">
+                    Why Pokhara is the most visited area nowadays? Here is how
+                    most...
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="blog-item-container">
+              <div class="blog-image-container">
+                <img
+                  src="https://images.unsplash.com/photo-1588893421526-8073c746c0f0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80"
+                  alt="#"
+                />
+              </div>
+              <div class="blog-description-container">
+                <div class="blog-info-container">
+                  <div class="blog-date">Aug 9, 2022</div>
+                  <div class="blog-comment">3 Comments</div>
+                </div>
+                <hr class="blog-hr" />
+                <div class="blog-description">
+                  <div class="blog-heading">Fewa Lake become popular</div>
+                  <div class="blog-paragraph">
+                    Why Pokhara is the most visited area nowadays? Here is how
+                    most...
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="blog-item-container">
+              <div class="blog-image-container">
+                <img
+                  src="https://images.unsplash.com/photo-1588893421526-8073c746c0f0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80"
+                  alt="#"
+                />
+              </div>
+              <div class="blog-description-container">
+                <div class="blog-info-container">
+                  <div class="blog-date">Aug 9, 2022</div>
+                  <div class="blog-comment">3 Comments</div>
+                </div>
+                <hr class="blog-hr" />
+                <div class="blog-description">
+                  <div class="blog-heading">Fewa Lake become popular</div>
+                  <div class="blog-paragraph">
+                    Why Pokhara is the most visited area nowadays? Here is how
+                    most...
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ----------------------------------- TRAVEL PARTNER ------------------------------------------------- -->
+      <div class="travel-container">
+        <div class="container">
+          <div class="logo-item-container">
+            <img src="./media/travel1.jpg" alt="" />
+            <img src="./media/travel2.jpg" alt="" />
+            <img src="./media/travel3.png" alt="" />
+            <img src="./media/travel4.jpg" alt="" />
+            <img src="./media/travel5.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+      <!-- ------------------------------------- FOOTER ------------------------------------------------ -->
+      <div class="footer-container">
+        <div class="container">
+          <div class="links-container">
+            <div class="redcarpet">
+              <div class="redcarpet-heading">RedCarpet.</div>
+              <div class="redcarpet-description">
+                We are the first and passionate team to take your trip for your
+                health & the purpose of life.
+              </div>
+              <div class="social">Let's get connected :</div>
+            </div>
+            <div class="menu">
+              <div class="footer-headings">Menu</div>
+              <div class="footer-list-t1">
+                <ul>
+                  <li>Home</li>
+                  <li>Trips</li>
+                  <li>Destination</li>
+                  <li>About</li>
+                  <li>Contact Us</li>
+                  <li>Blog</li>
+                </ul>
+              </div>
+            </div>
+            <div class="support">
+              <div class="footer-headings">Support</div>
+              <div class="footer-list-t2">
+                <ul>
+                  <li>24*7 Support</li>
+                  <li>License Policy</li>
+                  <li>100% Satisfaction</li>
+                  <li>100% Accuracy</li>
+                  <li>Payment</li>
+                </ul>
+              </div>
+            </div>
+            <div class="quick-links">
+              <div class="footer-headings">Quick Links</div>
+              <div class="footer-list-t2">
+                <ul>
+                  <li>Portfolio</li>
+                  <li>Account Info</li>
+                  <li>Work With Us</li>
+                  <li>Policies & Rules</li>
+                  <li>Meet Our Team</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <hr class="footer-hr" />
+          <div class="copyright-container">
+            <div class="copyright">© Copyright RedCarpet 2023</div>
+            <div class="go-top-container">
+              <span class="go-top-text">Go to home</span>
+              <img src="./media/page-up.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- div Below -> landing-page-container Closing  -->
+    </div>
+  </body>
+</html>
