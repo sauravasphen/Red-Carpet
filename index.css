@@ -41,7 +41,7 @@ body {
 /* -------------- NAVBAR --------------------------------------- */
 
 .nav-container {
-  background-color: var(--grey-lightest);
+  background-color: rgba(241, 241, 241, 0.8);
   height: var(--nav-height);
   display: flex;
   position: fixed;
@@ -854,8 +854,38 @@ body {
 /* -------------------------- Our Story Section --------------------------- */
 .our-story-paragraph{
   margin-top: 30px;
-  font-size: 1.15 rem;
+  font-size: 1.15rem;
   letter-spacing: 1px;
+}
+.our-story-container{
+  margin-bottom: 40px;
+}
+
+/* ------------------------ Our Team Section ----------------------------------- */
+.team-list-container{
+  display: flex;
+}
+.team-item-container{
+  background-color: var(--grey-lightest);
+  width: 300px;
+  padding: 30px;
+}
+.team-item-description-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.team-item-image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.team-item-image-container img {
+  /* overflow: hidden; */
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 /* ----------------- ANIMATION ------------------------------- */
