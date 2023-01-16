@@ -28,7 +28,7 @@ body {
   overflow-x: hidden;
   font-family: "Poppins", sans-serif;
 }
-.landing-page-container {
+.page-container {
   width: 100vw;
 }
 .container {
@@ -80,7 +80,7 @@ body {
   text-decoration: none;
   color: black;
 }
-.menu-item.active a{
+.active a{
   color: var(--accent);
 }
 .menu-item img {
@@ -122,6 +122,9 @@ body {
 .sub-menu-item{
   padding: 10px 15px;
   border-bottom: .5px solid var(--accent);
+}
+.sub-menu-item a{
+  color: var(--accent);
 }
 .sub-menu-item:last-child{
   border-bottom: none;
@@ -863,17 +866,22 @@ body {
 
 /* ------------------------ Our Team Section ----------------------------------- */
 .team-list-container{
+  margin: 30px 0px;
   display: flex;
+  justify-content: space-between;
 }
 .team-item-container{
   background-color: var(--grey-lightest);
-  width: 300px;
+  width: 380px;
   padding: 30px;
+  border-radius: 15px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 .team-item-description-container{
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 1rem;
 }
 .team-item-image-container {
   display: flex;
@@ -886,6 +894,68 @@ body {
   width: 150px;
   object-fit: cover;
   border-radius: 50%;
+}
+.team-item-name{
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+.team-item-designation{
+  font-size: 1.1rem;
+  color: var(--accent-dark);
+}
+.team-item-description{
+  margin-top: 1rem;
+  font-style: italic;
+  color: var(--grey-medium);
+}
+
+/* ----------------------------------------------------------------------- */
+/* ---------------------------- OUR SERVICES PAGE ---------------------------- */
+/* ------------------------------------------------------------------------------ */
+.our-story-container{
+  margin-top: var(--nav-height);
+  margin-bottom: 50px;
+  padding-top: 1rem;
+  font-size: 1.1rem;
+}
+.our-service-image img{
+  margin-top: 1rem;
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  vertical-align: middle;
+}
+.services-list-container{
+  display: flex;
+  flex-direction: column;
+}
+.services-item-container{
+  display: flex;
+  border-top: .5px solid var(--accent-dark);
+  border-bottom: .5px solid var(--accent-dark);
+  background-color: var(--grey-lightest);
+  padding: 30px;
+}
+.services-item-section-1{
+  width: 70%;
+}
+.service-title{
+  font-size: 1.25rem;
+  font-weight: 1000;
+  color: var(--accent);
+}
+.service-desc{
+  font-size: 1.1rem;
+  color: black;
+}
+.services-item-section-2{
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.services-item-section-2 img{
+  width: 100px;
 }
 
 /* ----------------- ANIMATION ------------------------------- */
