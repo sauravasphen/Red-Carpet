@@ -48,3 +48,5 @@ function hover() {
   function unhover() {
     searchIcon.src = './media/search-red.png';
   }
+
+  // ------------------- Swiper ----- Destionation Nepal --------------
