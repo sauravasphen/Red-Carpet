@@ -593,7 +593,7 @@ body {
 
 /* ----------------------- FOOTER ---------------------------------- */
 .footer-container {
-  background-color: var(--accent-dark);
+  background-color: var(--accent);
 }
 .links-container {
   display: flex;
@@ -728,6 +728,7 @@ body {
   padding: 40px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   /* justify-content: center; */
 }
 .contact-form-box input,
@@ -983,6 +984,99 @@ body {
   font-weight: 1000;
   color: var(--accent);
 }
+
+/* ----------------------------------------------------------------------- */
+/* ---------------------------- TREKKING PAGE ---------------------------- */
+/* ------------------------------------------------------------------------------ */
+.trekking-header-container{
+  margin-bottom: 4rem;
+  margin-top: var(--nav-height);
+  padding-top: 1rem;
+}
+
+/* Trip packages */
+
+.trekking-package-list-container{
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.5rem;
+  margin: 3rem 0rem;
+}
+.trekking-package-item{
+  background-color: var(--grey-lightest);
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+  height: 325px;
+  transition: all .5s ease;
+}
+.trekking-package-item:hover{
+  transform: scale(1.01);
+  /* box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px; */
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+.trekking-package-item-image{
+  width: 40%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 15px 0px 0px 15px;
+}
+.trekking-package-item-image img{
+  width: 110%;
+  height: 100%;
+  vertical-align: middle;
+  object-fit: cover;
+}
+.package-item-info-container{
+  width: 60%;
+  padding: 2rem 3rem 2rem 2rem;
+}
+.package-item-heading{
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--accent);
+}
+.package-item-description{
+  margin-top: 1rem;
+  font-size: 1.1rem;
+}
+.package-item-details{
+  display: flex;
+  flex-direction: column;
+  row-gap: .5rem;
+  margin-top: 1rem;
+}
+.package-item-duration,
+.package-item-budget{
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+.package-item-duration img,
+.package-item-budget img{
+  width: 25px;
+}
+.package-item-sub-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.package-item-viewbtn{
+  text-decoration: none;
+  background-color: var(--accent);
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 800;
+  padding: 1.1rem 1.5rem;
+  border-radius: 12px;
+  border: 1.5px solid var(--accent);
+  transition: all .2s ease;
+}
+.package-item-viewbtn:hover{
+  color: var(--accent);
+  background-color: var(--grey-lightest);
+}
+
 
 
 /* ----------------- ANIMATION ------------------------------- */
