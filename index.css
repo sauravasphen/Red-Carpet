@@ -264,7 +264,7 @@ body {
   width: 50px;
   border: 2px solid var(--accent-light);
 }
-.package-list-container {
+.pkg-list-container {
   display: flex;
   flex-wrap: wrap;
   margin-top: 30px;
@@ -594,6 +594,7 @@ body {
 /* ----------------------- FOOTER ---------------------------------- */
 .footer-container {
   background-color: var(--accent);
+  margin-top: 4rem;
 }
 .links-container {
   display: flex;
@@ -856,7 +857,7 @@ body {
 .our-story-paragraph{
   margin-top: 30px;
   font-size: 1.15rem;
-  letter-spacing: 1px;
+  /* letter-spacing: 1px; */
 }
 .our-story-container{
   margin-bottom: 40px;
@@ -988,7 +989,7 @@ body {
 /* ----------------------------------------------------------------------- */
 /* ---------------------------- TREKKING PAGE ---------------------------- */
 /* ------------------------------------------------------------------------------ */
-.trekking-header-container{
+.package-header-container{
   margin-bottom: 4rem;
   margin-top: var(--nav-height);
   padding-top: 1rem;
@@ -996,32 +997,33 @@ body {
 
 /* Trip packages */
 
-.trekking-package-list-container{
+.package-list-container{
   display: flex;
   flex-direction: column;
   row-gap: 2.5rem;
-  margin: 3rem 0rem;
+  margin: 2rem 0rem 3rem;
 }
-.trekking-package-item{
+.package-item{
   background-color: var(--grey-lightest);
   display: flex;
   align-items: center;
   border-radius: 15px;
   height: 325px;
+  font-size: 1.1rem;
   transition: all .5s ease;
 }
-.trekking-package-item:hover{
+.package-item:hover{
   transform: scale(1.01);
   /* box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px; */
   box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
-.trekking-package-item-image{
+.package-item-image{
   width: 40%;
   height: 100%;
   overflow: hidden;
   border-radius: 15px 0px 0px 15px;
 }
-.trekking-package-item-image img{
+.package-item-image img{
   width: 110%;
   height: 100%;
   vertical-align: middle;
@@ -1032,25 +1034,25 @@ body {
   padding: 2rem 3rem 2rem 2rem;
 }
 .package-item-heading{
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   font-weight: 800;
   color: var(--accent);
 }
 .package-item-description{
   margin-top: 1rem;
-  font-size: 1.1rem;
 }
 .package-item-details{
   display: flex;
   flex-direction: column;
   row-gap: .5rem;
-  margin-top: 1rem;
+  margin-top: 1.25rem;
 }
 .package-item-duration,
 .package-item-budget{
   display: flex;
   align-items: center;
   column-gap: 1rem;
+  font-weight: 800;
 }
 .package-item-duration img,
 .package-item-budget img{
@@ -1065,9 +1067,9 @@ body {
   text-decoration: none;
   background-color: var(--accent);
   color: white;
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   font-weight: 800;
-  padding: 1.1rem 1.5rem;
+  padding: 1rem 1.25rem;
   border-radius: 12px;
   border: 1.5px solid var(--accent);
   transition: all .2s ease;
