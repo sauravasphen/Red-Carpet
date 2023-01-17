@@ -42,6 +42,7 @@ body {
 
 .nav-container {
   background-color: rgba(241, 241, 241, 0.8);
+  backdrop-filter: blur(7px);
   height: var(--nav-height);
   display: flex;
   position: fixed;
