@@ -49,4 +49,8 @@ function hover() {
     searchIcon.src = './media/search-red.png';
   }
 
-  // ------------------- Swiper ----- Destionation Nepal --------------
+  // ------------------- To top of page handler --------------
+  function toTop(){
+    document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
