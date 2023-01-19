@@ -3,6 +3,11 @@
 font-family: 'Chivo Mono', monospace;
 font-family: 'Poppins', sans-serif;
  */
+/* FOR BLOG */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500&display=swap");
+/* font-family: 'Roboto Mono', monospace; */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap");
+/* font-family: 'Raleway', sans-serif; */
 
 :root {
   /* ---- MEASUREMENTS ---- */
@@ -30,6 +35,7 @@ body {
 }
 .page-container {
   width: 100vw;
+  margin-top: var(--nav-height);
 }
 .container {
   width: 100%;
@@ -175,10 +181,10 @@ body {
   font-size: 1rem;
   display: flex;
   align-items: center;
-  column-gap: .75rem;
+  column-gap: 0.5rem;
 }
-.social img{
-  width: 1.75rem;
+.social img {
+  width: 1.5rem;
 }
 .footer-headings {
   color: white;
@@ -641,7 +647,7 @@ body {
   justify-content: space-between;
   align-items: center;
   /* column-gap: 10px; */
-  font-weight: 800;
+  font-weight: 500;
 }
 .blog-date {
   font-size: 0.9rem;
@@ -678,8 +684,6 @@ body {
 .logo-item-container img {
   width: 100px;
 }
-
-
 
 /* ---------------------------------------------------------------------  */
 /* ------------------- CONTACT US PAGE --------------------------------- */
@@ -1194,6 +1198,257 @@ body {
   font-size: 1.5rem;
   letter-spacing: 0.1rem;
   font-weight: 800;
+}
+
+/* ------------------------------------------------------------------- */
+/* ------------------ PACKAGE DETAILS ------------------------------------------------- */
+/* ------------------------------------------------------------------- */
+.our-service-image img {
+  margin-top: 1rem;
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  vertical-align: middle;
+}
+
+/* --------------------- BLOG ----------------------- */
+.blog-page-container {
+  padding-top: 1.5rem;
+  /* font-family: 'Roboto Mono', monospace; */
+  font-family: "Raleway", sans-serif;
+}
+.blog-page-heading {
+  display: flex;
+  justify-content: center;
+  font-weight: 500;
+  color: var(--accent);
+  /* padding-top: 2rem ; */
+  font-size: 3rem;
+}
+.fat-line {
+  margin: 1.5rem 0rem;
+  border: 1px solid black;
+}
+/* Blog-Item */
+.blog-page-list-container {
+  display: flex;
+  flex-direction: column;
+  /* margin-top: 1rem; */
+}
+.blog-page-item-container {
+  display: flex;
+  height: 300px;
+  margin: 1rem 0rem;
+  background-color: var(--grey-lightest);
+  border-radius: 3px;
+}
+.blog-item-section-1 {
+  width: 60%;
+  padding: 1.5rem;
+}
+.blog-page-item-heading-text {
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--accent);
+}
+.blog-item-heading-sub-container {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  column-gap: 5rem;
+  /* justify-content: space-between; */
+  /* padding: 0px 1rem; */
+}
+.blog-item-heading-sub-container {
+  color: var(--accent-dark);
+}
+.blog-item-heading-sub-container span {
+  margin-left: 0.5rem;
+}
+.blog-item-heading-sub-container img {
+  width: 1rem;
+}
+.blog-item-section-2 {
+  width: 40%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0px 3px 3px 0px;
+}
+.blog-item-section-2 img {
+  width: 100%;
+  object-fit: cover;
+  vertical-align: middle;
+}
+.blog-item-description {
+  font-size: 1.1rem;
+  font-weight: 300;
+  /* letter-spacing: 1px; */
+  line-height: 1.75rem;
+}
+.view-blog-btn-container {
+  position: absolute;
+  opacity: 0;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* overflow: hidden; */
+  /* transform: translate(100%,100%); */
+  transition: all 0.3s ease;
+}
+.blog-page-item-container:hover .view-blog-btn-container {
+  opacity: 1;
+}
+.view-blog-btn-container button {
+  cursor: pointer;
+  background-color: var(--accent);
+  border: 1px solid var(--accent);
+  border-radius: 3px;
+  color: white;
+  font-size: 1.25rem;
+  letter-spacing: 1px;
+  padding: 0.75rem 1.75rem;
+}
+
+/* ------------------------- BLOG CONTENT ------------------------  */
+.blog-content{
+  font-size: 1.1rem;
+  font-weight: 400;
+  padding: 0rem 1rem;
+  /* margin: 0rem 2rem; */
+  /* letter-spacing: 1px; */
+  line-height: 1.75rem;
+}
+
+/* ----------------------------------------------------------------------------------- */
+/* -------------------- Trip Package Page(Trip Info) ------------------------------ */
+/* -------------------------------------------------------------------------- */
+.trip-header-image{
+  position: relative;
+}
+.trip-header-image img{
+  margin-top: 1rem;
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  vertical-align: middle;
+}
+.trip-img-info-container{
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  width: 100%;
+  height: 150px;
+  background-image: linear-gradient(RGB(0,0,0,0) 5%,rgb(0,0,0,1));
+  display: flex;
+  align-items:flex-end;
+  justify-content: space-between;
+  color: white;
+  padding: 0rem 1.5rem 1rem;
+}
+.trip-img-label{
+  font-size: 1rem;
+  font-weight: 200;
+}
+.trip-img-info{
+font-size: 1.5rem;
+font-weight: 400;
+}
+.trip-img-budget{
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+}
+
+/* ---- Accordion -------------- */
+.trip-accordion-container{
+  margin-top: 2rem;
+  width: 100%;
+  /* background-color: red; */
+}
+.trip-accordion-item{
+  position: relative;
+  margin-bottom: .5rem;
+}
+.trip-accordion-label{
+  position: relative;
+  padding: .75rem 1.5rem;
+  background-color: var(--accent);
+  border-radius: 3px;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 400;
+  cursor: pointer;
+}
+.trip-accordion-label::before{
+  content: "+";
+  position: absolute;
+  right: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.trip-accordion-content-container{
+  background-color: var(--grey-lightest);
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  overflow-y: auto;
+  transition: all .5s ease;
+}
+.trip-accordion-item.active .trip-accordion-content-container{
+  height: auto;
+  padding: .5rem 1.5rem 1rem;
+}
+.trip-accordion-item.active .trip-accordion-label::before{
+  content: "-";
+}
+/* --------- Trip Itinerary --------- */
+.trip-itinerary-container{
+  /* margin-top: 2rem; */
+  width: 100%;
+}
+.trip-itinerary-item{
+  position: relative;
+  margin-bottom: .5rem;
+}
+.trip-itinerary-label{
+  position: relative;
+  padding: .75rem 1rem;
+  background-color: var(--grey-lightest);
+  border-radius: 3px;
+  /* color: white; */
+  font-size: 1.1rem;
+  color: var(--accent);
+  font-weight: 400;
+  cursor: pointer;
+}
+.trip-itinerary-label::before{
+  content: "+";
+  position: absolute;
+  right: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.trip-itinerary-content{
+  background-color: var(--grey-lightest);
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  overflow-y: auto;
+  font-size: 1rem;
+  transition: all .5s ease;
+}
+.trip-itinerary-item.active .trip-itinerary-content{
+  height: auto;
+  padding: .5rem 1.5rem 1rem;
+}
+.trip-itinerary-item.active .trip-itinerary-label::before{
+  content: "-";
 }
 
 /* ----------------- ANIMATION ------------------------------- */

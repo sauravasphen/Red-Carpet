@@ -209,7 +209,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--swiper-navigation-color, var(--swiper-theme-color));
+  color: var(--swiper-navigation-color, #a80017);
+  background-color: rgb(255,255,255,0.5);
+  padding: 1.75rem;
+  border-radius: 50%;
 }
 .swiper-button-next.swiper-button-disabled,
 .swiper-button-prev.swiper-button-disabled {
@@ -230,7 +233,7 @@
 .swiper-button-next:after,
 .swiper-button-prev:after {
   font-family: swiper-icons;
-  font-size: var(--swiper-navigation-size);
+  font-size: 2rem;
   text-transform: none !important;
   letter-spacing: 0;
   font-variant: initial;
@@ -238,7 +241,7 @@
 }
 .swiper-button-prev,
 .swiper-rtl .swiper-button-next {
-  left: 10px;
+  left: 2px;
   right: auto;
 }
 .swiper-button-prev:after,
@@ -247,7 +250,7 @@
 }
 .swiper-button-next,
 .swiper-rtl .swiper-button-prev {
-  right: 10px;
+  right: 12px;
   left: auto;
 }
 .swiper-button-next:after,
