@@ -38,7 +38,7 @@ body {
   font-family: "Poppins", sans-serif;
 }
 .page-container {
-  width: 100vw;
+  /* width: 100vw; */
   margin-top: var(--nav-height);
 }
 .container {
@@ -213,7 +213,7 @@ body {
   font-weight: 300;
   font-size: 0.9rem;
 }
-.footer-list-t2 a{
+.footer-list-t2 a {
   color: #c9c9c9;
 }
 .footer-hr {
@@ -238,12 +238,12 @@ body {
 .go-top-container img {
   width: 50px;
 }
-.go-top-text{
+.go-top-text {
   color: white;
   letter-spacing: 1px;
   font-weight: 400;
 }
-.copyright{
+.copyright {
   color: #c9c9c9;
 }
 
@@ -427,7 +427,7 @@ body {
   justify-content: space-between;
   align-items: center;
   font-weight: 500;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 .package-title {
   font-size: 1.1rem;
@@ -653,7 +653,7 @@ body {
   margin-top: 15px;
   /* color: var(--grey-medium); */
 }
-.testimonial-message i{
+.testimonial-message i {
   color: var(--grey-medium);
 }
 .prev-btn {
@@ -724,21 +724,20 @@ body {
   border: 0.5px solid white;
 }
 .blog-description {
-  font-size: .95rem;
+  font-size: 0.95rem;
 }
 .blog-heading a {
   color: black;
   text-decoration: none;
   font-size: 1.3rem;
 }
-.blog-heading a:hover{
+.blog-heading a:hover {
   color: var(--accent);
   text-decoration: underline;
 }
 .blog-paragraph {
   color: var(--grey-medium);
   padding-left: 5px;
-
 }
 
 /* ---------------------- TRAVEL PARTNERS --------------------- */
@@ -1320,7 +1319,7 @@ body {
   width: 60%;
   padding: 1.5rem;
 }
-.blog-page-item-heading-text  a{
+.blog-page-item-heading-text a {
   font-size: 2rem;
   font-weight: 400;
   color: var(--accent);
@@ -1401,28 +1400,28 @@ body {
   line-height: 1.75rem;
 }
 /* --------------- Pagination -------------  */
-.pagination-container{
+.pagination-container {
   width: 100%;
   margin-top: 2rem;
   display: flex;
   justify-content: space-around;
 }
-.pagination-container a{
+.pagination-container a {
   text-decoration: none;
   background-color: var(--grey-lightest);
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   border-radius: 5px;
 }
-.pagination-container a:hover{
+.pagination-container a:hover {
   background-color: var(--accent);
   color: white;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
-.page-number-container{
+.page-number-container {
   display: flex;
   column-gap: 1rem;
 }
-.page-number-container .active{
+.page-number-container .active {
   color: white;
   background-color: var(--accent);
 }
@@ -1502,7 +1501,6 @@ body {
   font-size: 1.5rem;
   font-weight: 500;
   transition: all 0.5s ease;
-
 }
 .trip-accordion-content-container {
   background-color: var(--grey-lightest);
@@ -1518,7 +1516,6 @@ body {
 }
 .trip-accordion-item.active .trip-accordion-content-container {
   height: auto;
-
 }
 .trip-accordion-item.active .trip-accordion-content {
   transform: translateY(0px);
@@ -1594,14 +1591,13 @@ body {
   overflow: hidden;
 }
 
-
 /* --- Book Noe button ---- */
 .book-now-main-container {
   width: 100%;
   display: flex;
   flex-direction: column;
-
   align-items: flex-end;
+  /* justify-content: center; */
 }
 .book-now-content {
   height: 0px;
@@ -1611,51 +1607,97 @@ body {
   border-radius: 3px;
   width: 50%;
   transform: translateY(-50px);
-  transition: all .5s ease;
+  transition: all 0.5s ease;
   z-index: 1;
 }
-.book-now-header{
+.book-now-header {
   background-color: var(--accent);
   color: white;
   width: 100%;
   padding: 1rem;
   font-size: 1rem;
 }
-.book-now-form{
+.book-now-form {
   padding: 0rem 1.5rem 1rem;
 }
 .book-now-label {
-  width: 50%;
+  /* width: 25%; */
   background-color: var(--accent);
-  border-radius: 3px;
+  border-radius: 8px;
+  border: 1px solid var(--accent);
   color: white;
-  padding: 1rem 1.5rem;
-  justify-self: center;
+  padding: 1rem 4rem;
+  justify-content: center;
   cursor: pointer;
+  transition: all .4s ease-in-out;
+}
+.book-now-label:hover{
+  background-color: white;
+  color: var(--accent);
+}
+.book-now-dark-area{
 
 }
-.book-now-label::before{
-  content: "Book Now";
-  position: relative;
-  top: 50%;
-  left: 40%;
+.book-now-cover-container {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1000;
+  background-color: rgb(0, 0, 0, 0.05);
+  backdrop-filter: blur(3px);
+  /* opacity: 0; */
+  /* display: none; */
+  transform: translateX(100vw);
+}
+
+.book-now-cover-container.active{
+  /* opacity: 1; */
+  /* display: block; */
+  transform: translateX(0vw);
+  transition: all .25s ease-in-out;
+}
+.book-now-container {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  width: 50vw;
+  height: 100vh;
+  background-color: white;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.book-now-cover-container.active .book-now-container{
+}
+.book-now-dark-area{
+  width: 50vw;
+  height: 100vh;
+}
+.close-icon i {
+  position: absolute;
+  top: 2%;
+  right: 5%;
+  color: black;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.close-icon i:hover {
+  color: var(--accent);
+}
+.book-now-form {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
 }
 .book-now-form-item {
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin-top: 1rem;
-}
-.book-now-main-container.active .book-now-label::before{
-  content: "Click 'Book Now' and leave the rest to us!";
-  transition: all .5s ease;
-  left: 0%;
-
-}
-.book-now-main-container.active .book-now-content{
-  height: auto;
-  transform: translateY(0px);
+  align-items: flex-start;
+  margin-top: 1.5rem;
 }
 .book-now-form-item label {
   color: var(--grey-medium);
@@ -1664,42 +1706,39 @@ body {
 .book-now-form-item input,
 .book-now-form-item textarea {
   width: 100%;
-  padding: 7px 10px;
-  font-size: .95rem;
-  background-color: var(--grey-lightest);
-  /* outline: none; */
+  padding: 7px 10px 5px 0px;
+  font-size: 0.95rem;
+  /* background-color: var(--grey-lightest); */
   border: none;
-  /* border-radius: 20px; */
   width: 100%;
   font-family: "Poppins", sans-serif;
   resize: none;
-  border-bottom: 1px solid var(--grey-medium);
+  border-bottom: 2px solid var(--grey-medium);
 }
 .book-now-form-item input:focus,
 .book-now-form-item textarea:focus {
   outline: none;
-  border-bottom: 1px solid var(--accent);
+  border-bottom: 2px solid var(--accent);
 }
-.book-now-form-item input[type = submit]{
+.book-now-form-item input[type="submit"] {
   background-color: var(--accent);
   padding: 1rem;
   font-size: 1.15rem;
   width: 50%;
   color: white;
   border: 1px solid var(--accent);
-  border-radius: 3px;
+  border-radius: 8px;
   cursor: pointer;
+  transition: all .4s ease;
 }
-.book-now-form-item input[type = submit]:hover{
+.book-now-form-item input[type="submit"]:hover {
   background-color: white;
   color: var(--accent);
 }
-.book-now-sub-container{
+.book-now-sub-container {
   display: flex;
   column-gap: 1rem;
 }
-
-
 /* ----------------- ANIMATION ------------------------------- */
 @keyframes fade-slider {
   from {
