@@ -536,7 +536,8 @@ body {
 .contact-box-container {
   z-index: 3;
   width: 50%;
-  background-color: white;
+  /* background-color: white; */
+  background-color: rgb(255, 255, 255, 0.5);
   padding: 40px;
   border-radius: 15px;
 }
@@ -552,14 +553,16 @@ body {
 .contactus-form-box textarea {
   padding: 7px 10px;
   font-size: 1.15rem;
-  background-color: var(--grey-lightest);
+  /* background-color: var(--grey-lightest); */
+  background-color: rgb(255, 255, 255, 0.6);
+
   /* outline: none; */
   border: none;
   border-radius: 10px;
   width: 100%;
   font-family: "Poppins", sans-serif;
   resize: none;
-  border: 2px solid var(--grey-lightest);
+  border: 2px solid rgb(255, 255, 255, 0);
 }
 .contactus-form-box input:focus,
 .contactus-form-box textarea:focus {
@@ -568,7 +571,7 @@ body {
 }
 .contactus-form-box input[type="submit"] {
   color: white;
-  border: 1px solid var(--accent);
+  border: 2px solid var(--accent);
 
   background-color: var(--accent);
   cursor: pointer;
@@ -576,8 +579,9 @@ body {
 }
 .contactus-form-box input[type="submit"]:hover {
   color: var(--accent);
-  background-color: white;
-  border: 1px solid var(--accent);
+  /* background-color: white; */
+  background-color: rgb(255, 255, 255, 0);
+  border: 2px solid var(--accent);
 }
 .input-stretch {
   width: 100%;
