@@ -40,7 +40,7 @@ function showSlides() {
 
 // ------------ Change search icon on hover -> Search box --------
 const searchIcon = document.getElementById("search-icon");
-console.log(searchIcon)
+// console.log(searchIcon)
 function hover() {
     searchIcon.src ='./media/search-white.png';
   }
@@ -54,3 +54,36 @@ function hover() {
     document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   }
+
+
+  // ----------------- Itinerary -------------------------------
+  const accordionItem = document.getElementsByClassName(
+    "trip-accordion-item"
+  );
+  const accordionLabel = document.getElementsByClassName(
+    "trip-accordion-label"
+  );
+  for (let i = 0; i < accordionItem.length; i++) {
+    accordionLabel[i].addEventListener("click", function () {
+      accordionItem[i].classList.toggle("active");
+    });
+  }
+  const itineraryItem = document.getElementsByClassName(
+    "trip-itinerary-item"
+  );
+  const itineraryLabel = document.getElementsByClassName(
+    "trip-itinerary-label"
+  );
+  for (let i = 0; i < itineraryItem.length; i++) {
+    itineraryLabel[i].addEventListener("click", function () {
+      itineraryItem[i].classList.toggle("active");
+    });
+  }
+
+  // ---------- Book Now ------------------
+  const bookNowContent = document.getElementsByClassName("book-now-main-container");
+  const bookNowLabel = document.getElementsByClassName("book-now-label");
+  console.log(bookNowLabel);
+    bookNowLabel[0].addEventListener("click", function () {
+      bookNowContent[0].classList.toggle("active");
+    });
